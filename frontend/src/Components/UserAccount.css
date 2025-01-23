@@ -1,0 +1,161 @@
+/* General Styles */
+.user-account-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  
+  min-height: 100vh;
+}
+
+.form-container {
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+  border-color: #007bff;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles for Submitted Data */
+.submitted-data-container {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submitted-data-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+table th {
+  background-color: #007bff;
+  color: black;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .form-container {
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  .input-container input,
+  .input-container textarea {
+      font-size: 14px;
+  }
+
+  button {
+      font-size: 16px;
+  }
+
+  .submitted-data-container {
+      margin-top: 20px;
+  }
+
+  table th, table td {
+      font-size: 14px;
+      padding: 10px;
+  }
+}

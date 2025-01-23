@@ -1,0 +1,116 @@
+/* AdminAccount.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+input[type="search"] {
+    width: auto;
+    display: inline-block;
+}
+
+button {
+    display: inline-block;
+}
+
+/* Layout of the Admin Page */
+.admin-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.users-list, .edit-user-form, .reports-list {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Set fixed width to prevent resizing */
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    width: 300px;
+}
+
+.users-list ul, .reports-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.users-list li, .reports-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.users-list li:last-child, .reports-list li:last-child {
+    border-bottom: none;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Edit Form Styles */
+.edit-user-form input {
+    margin-bottom: 10px;
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .users-list, .edit-user-form, .reports-list {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
